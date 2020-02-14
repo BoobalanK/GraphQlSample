@@ -1,0 +1,25 @@
+scalar Date
+
+type Employee {
+    empno: ID!
+    ename: String!
+    job:String
+    mgr:Int
+    hiredate:Date
+    sal:String
+    comm:String
+    deptno:Int
+
+}
+
+type Department {
+    deptno: ID!
+    dname: String!
+    loc:String
+}
+
+type Query {
+    emp(ID: Int!): Employee!
+    allEmployees: [Employee!]!
+    totalEmployees: Int!
+}

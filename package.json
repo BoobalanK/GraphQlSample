@@ -1,0 +1,31 @@
+{
+  "name": "graphqlsample",
+  "version": "1.0.0",
+  "description": "A sample api for exploring graphql server",
+  "main": "./src/app.js",
+  "scripts": {
+    "start": "./node_modules/.bin/babel-node ./src/app.js",
+    "debug": "./node_modules/.bin/babel-node --nolazy --inspect-brk=9229 ./src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://192.168.0.255:3000/DSRC/Switch_Apps.git"
+  },
+  "author": "Boobalan Kothandaraman, Balaji Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^1.1.2",
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "graphql": "^0.11.3",
+    "graphql-tools": "^1.2.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-inline-import": "^2.0.6",
+    "babel-preset-env": "^1.6.0"
+  }
+}
